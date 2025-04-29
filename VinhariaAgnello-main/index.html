@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./imagens/LogoVinharia.png" alt="Logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <div class="profile">
+                    <i class="fas fa-user"></i>
+                    <span>Perfil</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="age-modal" class="modal">
+        <div class="modal-content">
+            <h2>Você tem 18 anos ou mais?</h2>
+            <div class="buttons">
+                <button onclick="confirmAge(true)">Sim</button>
+                <button onclick="confirmAge(false)">Não</button>
+            </div>
+        </div>
+    </div>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Encontre o <br> vinho perfeito</h1>
+            <a href="vinhos.html">
+                <button>Explorar nossos Vinhos</button>
+            </a>
+        </div>
+        <div class="banner-image">
+            <img src="./imagens/pexels-adonyi-foto-1407846.jpg" alt="Taça de vinho">
+        </div>
+    </section>
+    <section class="destaque-loja">
+        <div class="destaque-topo">
+            <h2>Destaque da loja</h2>
+            <a href="#" class="ver-tudo">Ver tudo</a>
+        </div>
+
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="./imagens/altos_las_hormigas_malbec_classico.png" alt="Vinho 1">
+                <p>Altos Las Hormigas <br> Malbec</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/vinho_vi_a_alberdi_reserva_2016.png" alt="Vinho 2">
+                <p>Vino Alberdi <br> Reserva</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Chatecau de Bcaucastel.png" alt="Vinho 3">
+                <p>Chatecau de <br> Bcaucastel</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Carpineto Dogajolo  Toscano.png" alt="Vinho 4">
+                <p>Carpineto Dogajolo <br> Toscano</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Château Ausone 2012.png" alt="Vinho 5">
+                <p>Château Ausone <br> 2012</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Primitivo di Manduria Conte di Campiano.webp" alt="Vinho 6">
+                <p>Primitivo di Manduria <br> Conte di Campiano</p>
+            </div>
+        </div>
+    </section>
+    <section class="destaque-loja">
+        <div class="destaque-topo">
+            <h2>Vinhos Tintos</h2>
+            <a href="#" class="ver-tudo">Ver tudo</a>
+        </div>
+
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="./imagens/altos_las_hormigas_malbec_classico.png" alt="Vinho 1">
+                <p>Altos Las Hormigas <br> Malbec</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/vinho_vi_a_alberdi_reserva_2016.png" alt="Vinho 2">
+                <p>Vino Alberdi <br> Reserva</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Chatecau de Bcaucastel.png" alt="Vinho 3">
+                <p>Chatecau de <br> Bcaucastel</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Carpineto Dogajolo  Toscano.png" alt="Vinho 4">
+                <p>Carpineto Dogajolo <br> Toscano</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Château Ausone 2012.png" alt="Vinho 5">
+                <p>Château Ausone <br> 2012</p>
+            </div>
+            <div class="produto">
+                <img src="./imagens/Primitivo di Manduria Conte di Campiano.webp" alt="Vinho 6">
+                <p>Primitivo di Manduria <br> Conte di Campiano</p>
+            </div>
+        </div>
+
+        <section class="como-funciona">
+            <h2>Como Funciona</h2>
+            <div class="etapas">
+              <div class="etapa">
+                <div class="icone">
+                  <img src="icons/copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" alt="Quiz">
+                </div>
+                <p>Responda ao nosso quiz</p>
+              </div>
+              <div class="etapa">
+                <div class="icone">
+                  <img src="icons/wine.png" alt="Recomendações">
+                </div>
+                <p>Receba Recomendações</p>
+              </div>
+              <div class="etapa">
+                <div class="icone">
+                  <img src="icons/delivery_truck_shipping_package_fast_icon_196609.png" alt="Entrega">
+                </div>
+                <p>Receba em Casa</p>
+              </div>
+            </div>
+          </section>
+          
+
+    <script src="script.js"></script>
+</body>
+
+</html>
