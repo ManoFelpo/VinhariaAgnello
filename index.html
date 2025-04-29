@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vinharia Agnello</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -14,7 +14,9 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="./imagens/LogoVinharia.png" alt="Logo">
+                <a href="index.html">
+                    <img src="./imagens/LogoVinharia.png" alt="Logo">
+                </a>
             </div>
 
             <div class="search-bar">
@@ -123,29 +125,76 @@
         <section class="como-funciona">
             <h2>Como Funciona</h2>
             <div class="etapas">
-              <div class="etapa">
-                <div class="icone">
-                  <img src="icons/copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" alt="Quiz">
+                <div class="etapa">
+                    <div class="icone">
+                        <img src="icons/copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" alt="Quiz">
+                    </div>
+                    <p>Responda ao nosso quiz</p>
                 </div>
-                <p>Responda ao nosso quiz</p>
-              </div>
-              <div class="etapa">
-                <div class="icone">
-                  <img src="icons/wine.png" alt="Recomendações">
+                <div class="etapa">
+                    <div class="icone">
+                        <img src="icons/wine.png" alt="Recomendações">
+                    </div>
+                    <p>Receba Recomendações</p>
                 </div>
-                <p>Receba Recomendações</p>
-              </div>
-              <div class="etapa">
-                <div class="icone">
-                  <img src="icons/delivery_truck_shipping_package_fast_icon_196609.png" alt="Entrega">
+                <div class="etapa">
+                    <div class="icone">
+                        <img src="icons/delivery_truck_shipping_package_fast_icon_196609.png" alt="Entrega">
+                    </div>
+                    <p>Receba em Casa</p>
                 </div>
-                <p>Receba em Casa</p>
-              </div>
             </div>
-          </section>
-          
+        </section>
+    </section>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="imagens/LogoVinharia.png" alt="Vinheria Agnello">
+                </a>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Produtos</h4>
+                    <a href="#">Vinhos</a>
+                    <a href="#">Novidades</a>
+                    <a href="#">Destaques</a>
+                </div>
+                <div class="link-column">
+                    <h4>Sobre Nós</h4>
+                    <a href="#">História</a>
+                    <a href="#">Armazenagem</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="link-column">
+                    <h4>Atendimento</h4>
+                    <a href="#">Fale Conosco</a>
+                    <a href="#">Perguntas Frequentes</a>
+                    <a href="#">SAC</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-button" onclick="toggleChat()">
+        <p>Fale com um Sommelier</p>
+        💬
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Sommelier Virtual</span>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body">
+            <p>Olá! Posso te ajudar a escolher um vinho?</p>
+        </div>
+    </div>
+
+
+    <script src="maiorDe18.js"></script>
+    <script src="somelier.js"></script>
 </body>
 
 </html>
