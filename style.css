@@ -411,6 +411,7 @@ body {
   display: none;
   transition-delay: 2s;
   padding-right: 15px;
+  font-size: 20px;
 }
 
 .chat-button:hover p {
@@ -419,7 +420,7 @@ body {
 
 .chat-button:hover {
   background-color: #e5ca85;
-  width: 400px;
+  width: 320px;
 }
 
 .chat-box {
@@ -432,7 +433,7 @@ body {
   display: none;
   flex-direction: column;
   z-index: 1000;
-  animation: somelier 200ms ease-in-out;
+  animation: slidein 200ms ease-in-out;
 }
 
 .chat-header {
@@ -463,10 +464,18 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-@keyframes somelier {
+@keyframes slidein {
   from {
-    transition: 200px;
+    transform: translateX(100%);
   } to {
-    transition: 0px;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(0%);
+  } to {
+    transform: translateX(100%);
   }
 }
