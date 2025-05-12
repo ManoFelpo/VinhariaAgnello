@@ -25,7 +25,7 @@ Este projeto foi desenvolvido com o objetivo de transformar a tradicional experi
 
 ## 🌐 Link do Projeto no GitHub Pages
 
-> (https://github.com/ManoFelpo/VinhariaAgnello.git)
+> (https://manofelpo.github.io/VinhariaAgnello/)
 
 ---
 
