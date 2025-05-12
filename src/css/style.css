@@ -52,10 +52,6 @@ body {
   font-size: 20px;
 }
 
-.search-button:hover {
-  color: #4e4e4e;
-}
-
 .icons {
   display: flex;
   align-items: center;
@@ -63,10 +59,6 @@ body {
   color: white;
   font-size: 18px;
   cursor: pointer;
-}
-
-.icons i:hover {
-  color: #8f8f8f;
 }
 
 .profile {
@@ -81,10 +73,6 @@ body {
 
 .profile span {
   color: white;
-}
-
-.profile:hover {
-  color: #8f8f8f;
 }
 
 .modal {
@@ -102,16 +90,6 @@ body {
   animation: fadeIn 0.5s ease;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 .modal-content {
   background: linear-gradient(135deg, #000814, #001a41);
   padding: 30px;
@@ -119,18 +97,6 @@ body {
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   animation: popUp 0.4s ease;
-}
-
-@keyframes popUp {
-  from {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .modal-content h2 {
@@ -151,20 +117,6 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-}
-
-.buttons button:first-child {
-  background-color: #D5C189;
-  color: rgb(0, 0, 0);
-}
-
-.buttons button:last-child {
-  background-color: #D5C189;
-  color: rgb(0, 0, 0);
-}
-
-.buttons button:hover {
-  transform: scale(1.1);
 }
 
 .banner {
@@ -198,14 +150,6 @@ body {
   transition: 200ms;
 }
 
-.banner-text button:hover {
-  scale: 1.1;
-}
-
-.banner-text button:hover {
-  background-color: #d4ad60;
-}
-
 .banner-image img {
   width: 200px;
   border-radius: 12px;
@@ -226,15 +170,15 @@ body {
   gap: 40px;
 }
 
+.destaque-topo h2 {
+  width: 300px;
+}
+
 .ver-tudo {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   transition: 100ms;
-}
-
-.ver-tudo:hover {
-  scale: 1.2;
 }
 
 .produtos-grid {
@@ -264,10 +208,6 @@ body {
   margin: 20px;
   transition: 200ms;
   cursor: pointer;
-}
-
-.produto:hover {
-  scale: 1.2;
 }
 
 .produto p {
@@ -313,11 +253,6 @@ body {
   align-items: center;
   margin-bottom: 10px;
   transition: 200ms;
-}
-
-.etapa:hover {
-  cursor: pointer;
-  scale: 1.1;
 }
 
 .icone img {
@@ -380,10 +315,6 @@ body {
   margin-bottom: 10px;
 }
 
-.link-column a:hover {
-  text-decoration: underline;
-}
-
 /* Botão flutuante */
 .chat-button {
   position: fixed;
@@ -399,7 +330,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: background-color 0.3s;
   transition: 300ms;
@@ -414,22 +345,13 @@ body {
   font-size: 20px;
 }
 
-.chat-button:hover p {
-  display: block;
-}
-
-.chat-button:hover {
-  background-color: #e5ca85;
-  width: 320px;
-}
-
 .chat-box {
   position: fixed;
   bottom: 90px;
   right: 20px;
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   display: none;
   flex-direction: column;
   z-index: 1000;
@@ -464,18 +386,4 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-@keyframes slidein {
-  from {
-    transform: translateX(100%);
-  } to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideout {
-  from {
-    transform: translateX(0%);
-  } to {
-    transform: translateX(100%);
-  }
-}
+@import url("efeitos.css");
